@@ -3,15 +3,19 @@ console.log(randomNumber);
 
 for (let i = 1; i <= 3; i++) {
   let user = +prompt(
-    "Oyijon google 1-dan 10-gacha qanaqadir son kiritkan, o'shani topsez man o'g'liz Jahongirdan sovg'a bor"
+    "Oyijon google 1-dan 10-gacha bo'lgan son kiritkan, o'shani topsez man o'g'liz Jahongirdan sovg'a bor"
   );
-  if (randomNumber === user) {
+  if (user >= 11 || user == "") {
+    alert("Eltimos 1-10-gacha bo'lgan son kiriting aya");
+  } else if (randomNumber === user) {
     alert(
       `siz toptiz. Oyi Man sizi judayam yahshi koraman.😘😘😘😘 bu son-${randomNumber}`
     );
     break;
   } else if (i === 3) {
-    alert(`${randomNumber}-siz shu sonni topolmadiz 3-imkoniyat ketib bo'ldi`);
+    alert(
+      `${randomNumber}-siz shu sonni topolmadiz 3-imkoniyat ketib bo'ldi Oyijon`
+    );
   } else if (randomNumber > user) {
     alert("Sal balandroq son ayting ");
   } else if (user > randomNumber) {
